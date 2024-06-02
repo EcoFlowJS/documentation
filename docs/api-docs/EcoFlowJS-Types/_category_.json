@@ -1,0 +1,10 @@
+{
+  "collapsible": true,
+  "collapsed": false,
+  "label": "Types Reference",
+  "link": {
+    "type": "generated-index",
+    "description": "Types Reference",
+    "slug": "types"
+  }
+}

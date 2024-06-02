@@ -1,0 +1,9 @@
+{
+  "collapsible": true,
+  "collapsed": false,
+  "label": "CLI Reference",
+  "link": {
+    "type": "generated-index",
+    "description": "CLI type descriptions and explanation"
+  }
+}
