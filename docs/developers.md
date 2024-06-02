@@ -2,62 +2,54 @@
 sidebar_position: 6
 ---
 
-# Developing EcoFLowJS
+# Developer Guide
 
-If you want to run the latest code from git, here's how to get started:
+To run the latest code from the repository, follow these steps:
 
-### Clone the project
-
-Clone the project
+### Clone the Repository
 
 ```bash
-  git clone https://github.com/EcoFlowJS/eco-flow.git
+git clone https://github.com/EcoFlowJS/eco-flow.git
 ```
 
-or clone recursively submodules.
+Or clone recursively with submodules:
 
 ```bash
-  git clone --recurse-submodules https://github.com/EcoFlowJS/eco-flow.git
+git clone --recurse-submodules https://github.com/EcoFlowJS/eco-flow.git
 ```
 
-### Go to the project directory
+### Navigate to the Project Directory
 
 ```bash
-  cd eco-flow
+cd eco-flow
 ```
 
-### Install dependencies
+### Install Dependencies
 
 ```bash
-  npm install --legacy-peer-deps
+npm install --legacy-peer-deps
 ```
 
-### Install dependencies
+### Build the Project
 
 ```bash
-  npm install --legacy-peer-deps
+npm run build
 ```
 
-### Build the project
+### Start the Server
+
+Start the backend:
 
 ```bash
-  npm run build
+npm run dev:backend
 ```
 
-### Start the server
-
-Start the backend
+Start the frontend:
 
 ```bash
-  npm run dev:backend
-```
-
-Start the frontend
-
-```bash
-  npm run dev:frontend
+npm run frontend
 ```
 
 :::note
-This command will only works cloning submodules.
+Ensure you cloned with submodules for these commands to work.
 :::

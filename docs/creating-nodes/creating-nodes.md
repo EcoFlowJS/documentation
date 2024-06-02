@@ -4,9 +4,7 @@ sidebar_position: 5
 
 # Creating Nodes
 
-The main way EcoFFlowJS can be extended is to add new nodes into its packages.
-
-Nodes can be published as npm modules to the [public npm repository](https://www.npmjs.com/) to make them available to the community or can a zip containing the packages.
+EcoFlowJS can be extended by adding new nodes to its packages.
 
 - [Creating your first node](./guide/creating-your-first-node)
 - [Manifest Properties](./guide/node-manifest)
@@ -17,30 +15,17 @@ Nodes can be published as npm modules to the [public npm repository](https://www
 - [Adding examples](https://example.com)
 - [Publishing nodes](https://example.com)
 
-## General guidance
+## General Guidelines
 
-There are some general principles to follow when creating new nodes. These reflect the approach taken by the core nodes and help provided a consistent user-experience.
+When creating new nodes:
 
-Nodes should:
-
-- **be well-defined in their purpose.**
-
-  A node that exposes every possible option of an API is potentially less useful that a group of nodes that each serve a single purpose.
-
-- **be simple to use, regardless of the underlying functionality.**
-
-  Hide complexity and avoid the use of jargon or domain-specific knowledge.
-
-- **be forgiving in what types of message properties it accepts.**
-
-  Message properties can be strings, numbers, booleans, Buffers, objects, arrays or nulls. A node should do The Right Thing when faced with any of these.
-
-- **be consistent in what they send.**
-
-  Nodes should document what properties they add to messages, and they should be consistent and predictable in their behavior.
-
-- **catch errors.**
-
-  If a node throws an uncaught error, EcoFlowJS will stop the entire flow as the state of the system is no longer known.
-
-  Wherever possible, nodes must catch errors or register error handlers for any asynchronous calls they make.
+- **Be clear in purpose.**
+  - Nodes should have a defined, specific functionality.
+- **Ensure simplicity.**
+  - Nodes should be easy to use, hiding complexity.
+- **Handle diverse message properties.**
+  - Nodes should gracefully accept various data types.
+- **Be consistent in output.**
+  - Document properties added to messages and maintain predictable behavior.
+- **Catch errors.**
+  - Prevent uncaught errors to avoid disrupting the entire flow.

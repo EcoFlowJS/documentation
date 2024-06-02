@@ -2,12 +2,14 @@
 sidebar_position: 3
 ---
 
-# Upgrading EcoFLowJS
+# Upgrading EcoFlowJS
 
-If you have installed EcoFLowJS as a global npm package, you can upgrade to the latest version with the following command:
+To upgrade to the latest version:
 
 ```bash
 sudo npm install -g @ecoflow/cli@latest
 ```
 
-If you are using Windows, do not start the command with `sudo`.
+:::info
+On Windows, omit `sudo`.
+:::

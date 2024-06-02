@@ -8,26 +8,27 @@ This guide will help you get EcoFlowJS installed and running in just a few minut
 
 ### Prerequisites
 
-To install EcoFlowJS locally you will need a [supported version of Node.js](https://nodejs.org/en/download).
+Ensure you have a [supported version of Node.js](https://nodejs.org/en/download) installed.
 
-### Installing with npm
+### Installation
 
-To install EcoFlowJS you can use the `npm` command that comes with node.js:
+To install EcoFlowJS globally using npm:
 
 ```bash
-  sudo npm install -g @ecoflow/cli@latest
+sudo npm install -g @ecoflow/cli@latest
 ```
 
-If you are using Windows, do not start the command with `sudo`.
-
+:::info
+On Windows, omit `sudo`.
+:::
 That command will install EcoFlowJS as a global module along with its dependencies.
 
-## Running
+## Running EcoFlowJS
 
-Once installed as a global module you can use the `ecoflow` command to start EcoFlowJS in your terminal. You can use `Ctrl-C` or close the terminal window to stop EcoFlowJS.
+After installation, start EcoFlowJS with the `ecoflow` command:
 
 ```bash
-$ ecoflow
+ecoflow
 ```
 
 Terminal output
@@ -46,10 +47,4 @@ Terminal output
 [ 29-5-2024 22:05:27 ] : [ Eco-FLow ] | [ info ] : Server Ready to use!!!
 ```
 
-You can then access the EcoFlowJS editor by pointing your browser at http://127.0.0.1:4000.
-
-The log output provides you various pieces of information:
-
-- The versions of EcoFlowJS and Node.js
-- Any errors hit when it tried to load the nodes
-- The usernames of the connected users.
+Access the EcoFlowJS editor at [http://127.0.0.1:4000](http://127.0.0.1:4000).

@@ -4,33 +4,27 @@ sidebar_position: 2
 
 # Command-line Usage
 
-EcoFlowJS can be started using the command ecoflow. This command can take various arguments:
+EcoFlowJS can be started using the `ecoflow` command with various arguments:
 
 ```bash
-$ ecoflow [-?] [-h] [--configName config.json] [--userDir DIR] [--port PORT]
-
-$ ecoflow admin <command> [args] [-?] [--userDir DIR] [--json]
+ecoflow [-?] [-h] [--configName config.json] [--userDir DIR] [--port PORT]
 ```
 
-:::note
-Admin command-line tool is still under development.
-:::
+### Basic Commands
 
-### Basic commands
+| Option          | Type      | Description                                         | Default     |
+| :-------------- | :-------- | :-------------------------------------------------- | :---------- |
+| `-h, --host`    | `string`  | Optional. Sets the TCP address of the server.       | `127.0.0.1` |
+| `-p, --port`    | `string`  | Optional. Sets the TCP port the runtime listens on. | `4000`      |
+| `--auth`        | `boolean` | Optional. Enable authentication mode.               | `false`     |
+| `-D, --dev`     | `boolean` | Optional. Enable development mode.                  | `false`     |
+| `-u, --user`    | `string`  | Optional. Sets the user directory.                  | `$HOME`     |
+| `-v, --verbose` | `boolean` | Optional. Enable verbose output.                    | `false`     |
+| `-V, --version` | `boolean` | Optional. Display the runtime version.              |             |
+| `-?, --help`    | `boolean` | Optional. Display the available commands.           |             |
 
-| Options         | Type      | Description                                                       | Default     |
-| :-------------- | :-------- | :---------------------------------------------------------------- | :---------- |
-| `-h, --host`    | `string`  | **Optional**. Sets the TCP address of the server.                 | `127.0.0.1` |
-| `-p, --port`    | `string`  | **Optional**. Sets the TCP port the runtime listens on.           | `4000`      |
-| `--auth`        | `boolean` | **Optional**. Enable authentication mode for user authentication. | `false`     |
-| `-D, --dev`     | `boolean` | **Optional**. Enable development mode.                            | `false`     |
-| `-u, --user`    | `string`  | **Optional**. Sets the user directory of the runtime.             | `$HOME`     |
-| `-v, --verbose` | `boolean` | **Optional**. Enable verbose output.                              | `false`     |
-| `-V, --version` | `boolean` | **Optional**. Display the version of the runtime.                 |             |
-| `-?, --help`    | `boolean` | **Optional**. Display the available commands.                     |             |
+### Admin Commands
 
-### Admin commands
-
-:::note
-Yet to be implemented.
+:::info
+Currently under development.
 :::
