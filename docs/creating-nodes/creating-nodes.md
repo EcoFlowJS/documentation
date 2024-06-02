@@ -8,16 +8,16 @@ The main way EcoFFlowJS can be extended is to add new nodes into its packages.
 
 Nodes can be published as npm modules to the [public npm repository](https://www.npmjs.com/) to make them available to the community or can a zip containing the packages.
 
-- [Creating your first node](./references/creating-nodes)
-- [Manifest Properties](./references/node-manifest)
-- [Node properties](./references/node-properties)
+- [Creating your first node](./guide/creating-your-first-node)
+- [Manifest Properties](./guide/node-manifest)
+- [Node properties](./guide/node-properties)
 - [Node appearance](https://example.com)
 - [Node status](https://example.com)
 - [Configuration nodes](https://example.com)
 - [Adding examples](https://example.com)
 - [Publishing nodes](https://example.com)
 
-### General guidance
+## General guidance
 
 There are some general principles to follow when creating new nodes. These reflect the approach taken by the core nodes and help provided a consistent user-experience.
 

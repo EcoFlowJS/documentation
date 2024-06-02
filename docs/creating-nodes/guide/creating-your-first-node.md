@@ -1,10 +1,8 @@
-# Creating Nodes
+---
+sidebar_position: 1
+---
 
-The main way EcoFLowJS can be extended is to add new nodes into its module.
-
-Nodes can be published as npm modules to the public npm repository to make them available to the community or can a zip containing the packages.
-
-## Creating your first node
+# Creating your first node
 
 Nodes get created when a application is launched and implemented when flow is deployed, they may send and receive http request and response whilst the flow is running and they get updated when the next flow is deployed.
 
