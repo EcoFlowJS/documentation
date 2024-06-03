@@ -1,9 +1,9 @@
 {
   "collapsible": true,
   "collapsed": false,
-  "label": "CLI Reference",
+  "label": "Utils",
   "link": {
     "type": "generated-index",
-    "description": "CLI type descriptions and explanation"
+    "description": "Utils API descriptions and explanation"
   }
 }
