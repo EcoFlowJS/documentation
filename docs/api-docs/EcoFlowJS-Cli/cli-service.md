@@ -33,17 +33,9 @@ cliService.startService({ auth: true, dev: true });
 
 **_Available arguments :_**
 
-| Parameter         | Type      | Description                                                          |
-| :---------------- | :-------- | :------------------------------------------------------------------- |
-| [args]            | `object`  |                                                                      |
-| [args.Host]       | `string`  | The host of the server at which the server should run.               |
-| [args.Port]       | `number`  | The port of server to ]run on.                                       |
-| [args.auth]       | `boolean` | Enable/Disable authentication mode.                                  |
-| [args.configDir]  | `string`  | The configuration directory of the application.                      |
-| [args.configName] | `string`  | The name of the configuration file.                                  |
-| [args.userDir]    | `string`  | The root directory where all configuration will be stored.           |
-| [args.dev]        | `boolean` | Enable/Disable running the application in `Development` environment. |
-| [args.logging]    | `object`  | The logging configuration for the application                        |
+| Parameter | Type                                   | Description                        |
+| :-------- | :------------------------------------- | :--------------------------------- |
+| [args]    | [`ICommand`](./cli-service#tsicommand) | **Optional**. Command options list |
 
 ### Stop Service
 
@@ -67,17 +59,9 @@ cliService.restartService({ auth: true, dev: true });
 
 **_Available arguments :_**
 
-| Parameter         | Type      | Description                                                          |
-| :---------------- | :-------- | :------------------------------------------------------------------- |
-| [args]            | `object`  |                                                                      |
-| [args.Host]       | `string`  | The host of the server at which the server should run.               |
-| [args.Port]       | `number`  | The port of server to ]run on.                                       |
-| [args.auth]       | `boolean` | Enable/Disable authentication mode.                                  |
-| [args.configDir]  | `string`  | The configuration directory of the application.                      |
-| [args.configName] | `string`  | The name of the configuration file.                                  |
-| [args.userDir]    | `string`  | The root directory where all configuration will be stored.           |
-| [args.dev]        | `boolean` | Enable/Disable running the application in `Development` environment. |
-| [args.logging]    | `object`  | The logging configuration for the application                        |
+| Parameter | Type                                   | Description                        |
+| :-------- | :------------------------------------- | :--------------------------------- |
+| [args]    | [`ICommand`](./cli-service#tsicommand) | **Optional**. Command options list |
 
 ### Status
 
@@ -86,3 +70,35 @@ cliService.restartService({ auth: true, dev: true });
 kind: `Stopped | Running | Restarting`
 
 Return the current service status, which can be one of **`Stopped`**, **`Running`**, or **`Restarting`**.
+
+## TypeScript Properties
+
+### `ts:ICommand`
+
+```ts
+interface ICommand {
+  /** The host of the server at which the server should run. */
+  Host?: string;
+
+  /** The port of server to run on. */
+  Port?: number;
+
+  /** Enable/Disable authentication mode. */
+  auth?: boolean;
+
+  /** The configuration directory of the application. */
+  configDir?: string;
+
+  /** TThe name of the configuration file. */
+  configName?: string;
+
+  /** The root directory where all configuration will be stored. */
+  userDir?: string;
+
+  /** The logging configuration for the application */
+  logging?: loggerOptions;
+
+  /** Enable/Disable running the application in Development environment. */
+  dev?: boolean;
+}
+```
