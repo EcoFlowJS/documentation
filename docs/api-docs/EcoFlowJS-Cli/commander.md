@@ -14,7 +14,7 @@ Create an instance of the CommanderCli class
 
 _Example Basic usage:_
 
-```code
+```ts
 import { CommanderCli } from "@ecoflow/cli";
 
 const commander = new CommanderCli();
@@ -22,11 +22,11 @@ const commander = new CommanderCli();
 
 ### Parse Arguments
 
-**commander.parseArgs()**
+**commander.parseArgs()** ⇒ [`CommanderCli`](./commander)
 
 Parse the command line arguments.
 
-```code
+```ts
 commander.parseArgs();
 ```
 
@@ -34,17 +34,19 @@ commander.parseArgs();
 
 ### Set Uses Message
 
-**commander.usesMsgs(str)**
+**commander.usesMsgs(str)** ⇒ [`CommanderCli`](./commander)
 
 Sets the usage message for the Commander CLI command
 
-```code
+_Example Basic usage:_
+
+```ts
 commander.usesMsgs(
   `[-?] [-h] [--settings settings.js] [--userDir DIR]
                [--port PORT] [--title TITLE] [--safe] [flows.json]
 
        ecoflow admin <command> [args] [-?] [--userDir DIR] [--json]`
-)
+);
 ```
 
 **Return**: The [`CommanderCli`](./commander) instance.
@@ -56,11 +58,13 @@ commander.usesMsgs(
 
 ### Arguments
 
-**commander.args**
+**commander.args** ⇒ `object`
 
 Return an object containing the arguments stored in it.
 
-```code
+_Example Basic usage:_
+
+```ts
 const args = commander.args;
 
 console.log(args);
@@ -70,6 +74,6 @@ console.log(args);
 
 ### CLI Service
 
-**commander.CliService**
+**commander.CliService** ⇒ [`CliService`](./cli-service)
 
 Returns an instance of the [`CliService`](./cli-service) class.

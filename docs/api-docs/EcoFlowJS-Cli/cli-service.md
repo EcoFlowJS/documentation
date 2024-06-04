@@ -14,7 +14,7 @@ Create an instance of the CliService class
 
 _Example Basic usage:_
 
-```code
+```ts
 import { CommanderCli } from "@ecoflow/cli";
 
 const commander = new CommanderCli();
@@ -23,49 +23,55 @@ const cliService = commander.CliService;
 
 ### Start Service
 
-**cliService.startService([args])**
+**cliService.startService([args])** ⇒ `void`
 
 Starts the service EcoFlowJS service with the given command arguments.
 
-```code
+_Example Basic usage:_
+
+```ts
 cliService.startService({ auth: true, dev: true });
 ```
 
 **_Available arguments :_**
 
-| Parameter | Type                                   | Description                        |
-| :-------- | :------------------------------------- | :--------------------------------- |
-| [args]    | [`ICommand`](./cli-service#tsicommand) | **Optional**. Command options list |
+| Parameter | Type                                 | Description                        |
+| :-------- | :----------------------------------- | :--------------------------------- |
+| [args]    | [`ICommand`](./cli-service#icommand) | **Optional**. Command options list |
 
 ### Stop Service
 
-**cliService.stopService()**
+**cliService.stopService()** ⇒ `void`
 
 Stops the service if it is currently running and exit the main process too.
 
-```code
+_Example Basic usage:_
+
+```ts
 cliService.stopService();
 ```
 
 ### Restart Service
 
-**cliService.restartService([args])**
+**cliService.restartService([args])** ⇒ `void`
 
 Restarts the service by setting the service status to `Restarting`, stopping the service, and then starting the service with the provided arguments.
 
-```code
+_Example Basic usage:_
+
+```ts
 cliService.restartService({ auth: true, dev: true });
 ```
 
 **_Available arguments :_**
 
-| Parameter | Type                                   | Description                        |
-| :-------- | :------------------------------------- | :--------------------------------- |
-| [args]    | [`ICommand`](./cli-service#tsicommand) | **Optional**. Command options list |
+| Parameter | Type                                 | Description                        |
+| :-------- | :----------------------------------- | :--------------------------------- |
+| [args]    | [`ICommand`](./cli-service#icommand) | **Optional**. Command options list |
 
 ### Status
 
-**cliService.serviceStatus**
+**cliService.serviceStatus** ⇒ `Stopped | Running | Restarting`
 
 kind: `Stopped | Running | Restarting`
 
@@ -73,7 +79,7 @@ Return the current service status, which can be one of **`Stopped`**, **`Running
 
 ## TypeScript Properties
 
-### `ts:ICommand`
+### `ICommand`
 
 ```ts
 interface ICommand {
