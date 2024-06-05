@@ -79,7 +79,7 @@ Validates a database connection using the specified driver and connection config
 
 ### Add Database Connection
 
-**addDatabaseConnection(name, driver, connection, [isSystem])** ⇒ `Promise<[boolean, string]>`
+**addDatabaseConnection(name, driver, connection, [isSystem])** ⇒ `Promise<[status, message]>`
 
 Asynchronously adds a database connection with the given parameters.
 
@@ -94,9 +94,16 @@ Asynchronously adds a database connection with the given parameters.
 | connection | `ConnectionConfig`  | The configuration details for the connection.       |
 | [isSystem] | `boolean` `(false)` | Indicates if the connection is a system connection. |
 
+**_Return arguments types :_**
+
+| Parameter | Type      | Description    |
+| :-------- | :-------- | :------------- |
+| status    | `boolean` | Result status  |
+| message   | `string`  | Result message |
+
 ### Remove Database Connection
 
-**removeDatabaseConnection(name)** ⇒ `Promise<[boolean, String]>`
+**removeDatabaseConnection(name)** ⇒ `Promise<[status, message]>`
 
 Asynchronously removes a database connection with the given name.
 
@@ -108,9 +115,16 @@ Asynchronously removes a database connection with the given name.
 | :-------- | :------- | :--------------------------------------------- |
 | name      | `string` | The name of the database connection to remove. |
 
+**_Return arguments types :_**
+
+| Parameter | Type      | Description    |
+| :-------- | :-------- | :------------- |
+| status    | `boolean` | Result status  |
+| message   | `string`  | Result message |
+
 ### Update Database Connection
 
-**removeDatabaseConnection(name, driver, connection)** ⇒ `Promise<[boolean, String]>`
+**removeDatabaseConnection(name, driver, connection)** ⇒ `Promise<[status, message]>`
 
 Updates the database connection with the given name, driver, and connection configuration.
 
@@ -123,6 +137,13 @@ Updates the database connection with the given name, driver, and connection conf
 | name       | `string`           | The name of the database connection to update. |
 | driver     | `DB_Drivers`       | The driver type of the database connection.    |
 | connection | `ConnectionConfig` | The new connection configuration to update.    |
+
+**_Return arguments types :_**
+
+| Parameter | Type      | Description    |
+| :-------- | :-------- | :------------- |
+| status    | `boolean` | Result status  |
+| message   | `string`  | Result message |
 
 ### Driver is Knex
 

@@ -6,9 +6,9 @@ sidebar_position: 5
 
 EcoFlowJS can be extended by adding new nodes to its packages.
 
-- [Creating your first node](./guide/creating-your-first-node)
-- [Manifest Properties](./guide/node-manifest)
-- [Node properties](./guide/node-properties)
+- [Creating your first node](./creating-your-first-node)
+- [Manifest Properties](./node-manifest)
+- [Node properties](./node-properties)
 - [Node appearance](https://example.com)
 - [Node status](https://example.com)
 - [Configuration nodes](https://example.com)
