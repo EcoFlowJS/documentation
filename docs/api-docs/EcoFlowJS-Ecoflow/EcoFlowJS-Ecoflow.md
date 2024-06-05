@@ -81,7 +81,7 @@ Initializes database connection, router, modules, flow editor, editor, system ro
 | router     | [`EcoRouter`](./EcoRouter)            | Represents an instance of the EcoRouter.                                                                |
 | container  | [`EcoContainer`](./EcoContainer)      | Represents an instance of the EcoContainer.                                                             |
 | socket     | `Server`                              | Represents a socket server instance. Official documentation can be found [here](https://socket.io/docs) |
-| config     | [`Config`](./Configutaion)            | Represents the configuration object.                                                                    |
+| config     | [`Config`](./Configuration)           | Represents the configuration object.                                                                    |
 | database   | [`Database`](../EcoFlowJS-Database)   | Represents the Database instance.                                                                       |
 | ecoModule  | [`EcoModule`](../EcoFlowJS-Module)    | Represents the EcoModule instance.                                                                      |
 | flowEditor | [`EcoFlowEditor`](../EcoFlowJS-Flows) | Represents the EcoFlowEditor instance.                                                                  |
