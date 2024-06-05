@@ -48,7 +48,7 @@ This tells the runtime what are the controller files the module contains.
 
 For more information about how to package your node, including requirements on naming and other properties that should be set before publishing your node, refer to the [packaging guide](https://example.com).
 
-:::note
+:::warning
 Please do **not** publish this example node to npm!
 :::
 
@@ -124,6 +124,6 @@ npm install C:\Users\my_name\Documents\ecoflow-contrib-example-lower-case
 
 This creates a symbolic link to your node module project directory in `~/.ecoflow/modules/node_modules` so that EcoFlowJS will discover the node when it starts. Any changes to the node’s file can be picked up by simply restarting EcoFlowJS.
 
-:::note
+:::tip
 `npm` will automatically add an entry for your module in the `package.json` file located in your user directory. If you don't want it to do this, use the `--no-save` option to the `npm install` command.
 :::

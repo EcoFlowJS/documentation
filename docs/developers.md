@@ -50,6 +50,6 @@ Start the frontend:
 npm run frontend
 ```
 
-:::note
+:::info
 Ensure you cloned with submodules for these commands to work.
 :::

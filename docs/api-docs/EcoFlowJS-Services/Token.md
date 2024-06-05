@@ -1,6 +1,8 @@
 # Token
 
-TokenServices a service class that provides methods for managing tokens in the database.## Usage
+TokenServices a service class that provides methods for managing tokens in the database.
+
+## Usage
 
 _Example Basic usage:_
 

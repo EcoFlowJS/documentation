@@ -22,7 +22,7 @@ Asynchronously closes the server.
 
 **_Available arguments :_**
 
-| Parameter | Type `(Default`     | Description                                           |
+| Parameter | Type `(Default)`    | Description                                           |
 | :-------- | :------------------ | :---------------------------------------------------- |
 | [exit]    | `boolean` `(false)` | Whether to exit the process after closing the server. |
 
@@ -44,7 +44,7 @@ Initializes Passport with the provided options.
 
 **_Available arguments :_**
 
-| Parameter | Type `(Default`                 | Description                                                                                                      |
+| Parameter | Type                            | Description                                                                                                      |
 | :-------- | :------------------------------ | :--------------------------------------------------------------------------------------------------------------- |
 | [options] | `StrategyOptionsWithoutRequest` | The options to configure Passport. Official documentations can be found [here](https://www.passportjs.org/docs/) |
 

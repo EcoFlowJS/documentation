@@ -18,7 +18,7 @@ app.start();
 - [`EcoServer`](./EcoServer)
 - [`EcoRouter`](./EcoRouter)
 - [`EcoContainer`](./EcoContainer)
-- [`Config`](./Configutaion)
+- [`Config`](./Configuration)
 - [`Database`](../EcoFlowJS-Database)
 - [`EcoModule`](../EcoFlowJS-Module)
 - [`EcoFlowEditor`](../EcoFlowJS-Flows)

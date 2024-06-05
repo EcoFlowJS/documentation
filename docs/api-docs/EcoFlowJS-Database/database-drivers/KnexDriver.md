@@ -1,4 +1,4 @@
-# DriverKnex
+# Knex
 
 DriverKnex represents a class that implements the DriverKnex interface for interacting with a database using Knex.js.
 

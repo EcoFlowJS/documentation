@@ -1,6 +1,8 @@
 # SchemaEditor
 
-SchemaEditorService a service class that methods for managing schema editing operations on a database using either Knex or Mongoose.## Usage
+SchemaEditorService a service class that methods for managing schema editing operations on a database using either Knex or Mongoose.
+
+## Usage
 
 _Example Basic usage:_
 

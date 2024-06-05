@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "EcoFlowJS",
-  tagline: "Build your RestFul-APIs with the minimalist way possible!",
+  tagline: "Build your RestFul-APIs with the minimal code possible!",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here

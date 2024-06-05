@@ -4,8 +4,8 @@ Database is responsible for managing database connections and configurations.
 
 ## Drivers
 
-- [`Knex`](./Drivers/KnexDriver)
-- [`Mongoose`](./Drivers/MongooseDriver)
+- [`Knex`](./database-drivers/KnexDriver)
+- [`Mongoose`](./database-drivers/MongooseDriver)
 
 ## API Reference
 

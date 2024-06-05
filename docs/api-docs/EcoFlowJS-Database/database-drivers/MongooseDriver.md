@@ -1,4 +1,4 @@
-# DriverMongoose
+# Mongoose
 
 DriverMongoose represents a class that implements the DriverMongoose interface and provides methods for interacting with MongoDB
 

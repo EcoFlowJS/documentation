@@ -1,6 +1,8 @@
 # Role
 
-RoleService a service class that provides methods for interacting with roles in the database.## Usage
+RoleService a service class that provides methods for interacting with roles in the database.
+
+## Usage
 
 _Example Basic usage:_
 

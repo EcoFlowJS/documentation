@@ -1,6 +1,8 @@
 # User
 
-UserService a service class that methods for managing users information on a database using either Knex or Mongoose.## Usage
+UserService a service class that methods for managing users information on a database using either Knex or Mongoose.
+
+## Usage
 
 _Example Basic usage:_
 
