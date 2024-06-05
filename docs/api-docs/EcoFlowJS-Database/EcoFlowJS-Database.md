@@ -147,7 +147,7 @@ Updates the database connection with the given name, driver, and connection conf
 
 ### Driver is Knex
 
-**isKnex(connection)** ⇒ [`connection is DriverKnex`](./Drivers/KnexDriver)
+**isKnex(connection)** ⇒ [`connection is DriverKnex`](./database-drivers/KnexDriver)
 
 Checks if the given connection is an instance of DriverKnex.
 
@@ -161,7 +161,7 @@ Checks if the given connection is an instance of DriverKnex.
 
 ### Driver is Mongoose
 
-**isMongoose(connection)** ⇒ [`connection is DriverMongoose`](./Drivers/MongooseDriver)
+**isMongoose(connection)** ⇒ [`connection is DriverMongoose`](./database-drivers/MongooseDriver)
 
 Checks if the given connection is an instance of DriverMongoose.
 
