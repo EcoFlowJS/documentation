@@ -8,10 +8,10 @@ EcoFlowJS can be extended by adding new nodes to its packages.
 
 - [Creating your first node](./creating-your-first-node)
 - [Manifest Properties](./node-manifest)
-- [Node properties](./node-properties)
+- [Node Inputs Types](./input-types)
 - [Controller Description](./controller-description)
 - [Adding Examples](./adding-examples)
-- [Publishing nodes](./publishing)
+- [Publishing nodes](./Packaging)
 
 ## General Guidelines
 

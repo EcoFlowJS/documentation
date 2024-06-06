@@ -46,7 +46,7 @@ Once generated, you must add a `ecoModule` section containing a object with `key
 
 This tells the runtime what are the controller files the module contains.
 
-For more information about how to package your node, including requirements on naming and other properties that should be set before publishing your node, refer to the [packaging guide](https://example.com).
+For more information about how to package your node, including requirements on naming and other properties that should be set before publishing your node, refer to the [packaging guide](./Packaging).
 
 :::warning
 Please do **not** publish this example node to npm!
@@ -69,7 +69,7 @@ In this instance, the node fetch the msg from the http body as the payload and c
 
 If the node has any external module dependencies, they must be included in the dependencies section of its package.json file.
 
-For more information about the runtime part of the node, see [here](https://example.com).
+For more information about the runtime part of the node, see [here](./controller-description).
 
 ## manifest.js
 
@@ -94,7 +94,7 @@ A node’s manifest file provides the following things:
 
 In this example, the node has a controller `lowerCaseController` which get executed when the node is called as the http response controller.
 
-For more information about the manifest part of the node, see [here](https://example.com).
+For more information about the manifest part of the node, see [here](./node-manifest).
 
 ## Testing your node in EcoFlowJS
 
