@@ -82,7 +82,7 @@ const config: Config = {
         },
         {
           label: "GitHub",
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/EcoFlowJS/eco-flow",
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} EcoFLowJS, Inc. Built with Docusaurus.`,
