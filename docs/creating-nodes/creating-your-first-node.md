@@ -69,7 +69,7 @@ In this instance, the node fetch the msg from the http body as the payload and c
 
 If the node has any external module dependencies, they must be included in the dependencies section of its package.json file.
 
-For more information about the runtime part of the node, see [here](./controller-description).
+For more information about the runtime part of the node, see [here](./controllers).
 
 ## manifest.js
 

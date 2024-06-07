@@ -29,6 +29,8 @@ const config: Config = {
     locales: ["en"],
   },
 
+  plugins: ["docusaurus-plugin-less"],
+
   presets: [
     [
       "classic",

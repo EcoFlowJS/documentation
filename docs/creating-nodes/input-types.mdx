@@ -1,0 +1,310 @@
+---
+sidebar_position: 3
+---
+
+import Route from "@site/src/components/Route/Route.component";
+import Methods from "@site/src/components/Methods/Methods.component";
+import Code from "@site/src/components/Code/Code.component";
+import Toggle from "@site/src/components/Toggle/Toggle.component";
+import Date from "@site/src/components/Date/Date.component";
+import Time from "@site/src/components/Time/Time.component";
+import DateTime from "@site/src/components/DateTime/DateTime.component";
+import Number from "@site/src/components/Number/Number.component";
+import String from "@site/src/components/String/String.component";
+import HiddenString from "@site/src/components/HiddenString/HiddenString.component";
+import CheckPicker from "@site/src/components/CheckPicker/CheckPicker.component";
+import SelectPicker from "@site/src/components/SelectPicker/SelectPicker.component";
+import Checkbox from "@site/src/components/Checkbox/Checkbox.component";
+import Radio from "@site/src/components/Radio/Radio.component";
+import Range from "@site/src/components/Range/Range.component";
+import ListBox from "@site/src/components/ListBox/ListBox.component";
+
+# Input Options
+
+EcoFlowJs provides a number of input options that can be used to configure the output or take data from the users.
+
+A input option is basically a object that represents type of input and its specification.
+
+## Input Options Properties
+
+| Parameter        | Type `(Default)`                                                                                                                                                                                           | Description                                                                                                                                                            |
+| :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name             | `string`                                                                                                                                                                                                   | The name of the input.                                                                                                                                                 |
+| label            | `string`                                                                                                                                                                                                   | The label for the input.                                                                                                                                               |
+| type             | `ModuleSpecsInputsTypes` **`("String")`**                                                                                                                                                                  | The type of the input.                                                                                                                                                 |
+| [hint]           | `string`                                                                                                                                                                                                   | The hint for the input type.                                                                                                                                           |
+| [required]       | `boolean`                                                                                                                                                                                                  | Indicates if the input is required.                                                                                                                                    |
+| [codeLanguage]   | `string` **`("javascript")`**                                                                                                                                                                              | The programming language for the input. For more information documentation of `react-monaco-editor` [here](https://github.com/react-monaco-editor/react-monaco-editor) |
+| [methods]        | `API_METHODS[] \| ((value?: {[key: string]: any;}) => API_METHODS[] \| Promise<API_METHODS[]>)`                                                                                                            | The methods for the input.                                                                                                                                             |
+| [radioValues]    | `string \| string[] \| ((value?: { [key: string]: any; }) => string \| string[] \| Promise<string \| string[]>)`                                                                                           | The values for radio buttons.                                                                                                                                          |
+| [pickerOptions]  | `string[] \| ModuleSpecsInputsTypeOptions[] \| ((value?: { [key: string]: any; }) => string[] \| ModuleSpecsInputsTypeOptions[] \| Promise<string[] \| ModuleSpecsInputsTypeOptions[]>)`                   | The options for a picker field.                                                                                                                                        |
+| [listBoxSorting] | `boolean`                                                                                                                                                                                                  | Indicates if the list box should be sorted.                                                                                                                            |
+| [defaultValue]   | `string \| number \| boolean \| Date \| string[] \| {start: number, end: number} \| ((value?: { [key: string]: any;}) => string \| number \| boolean \| Date \| string[] \| {start: number, end: number})` | The default value for the input field.                                                                                                                                 |
+
+## Fetching values
+
+The values can be retrieved in the controller using the EcoContext.
+
+For more information check the controller documentation [here](./controllers#inputs)
+
+## Examples
+
+### Route
+
+```ts
+{
+    name: "apiEndpoint",
+    label: "API End point",
+    type: "Route",
+}
+```
+
+<Route />
+
+### Methods
+
+```ts
+{
+    name: "apiMethod",
+    label: "Method",
+    type: "Methods",
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+}
+```
+
+:::note
+The `methods` parameter must present for the `Method` type.
+:::
+
+<Methods />
+
+### Code
+
+```ts
+{
+    name: "code",
+    label: "Code",
+    type: "Code",
+    codeLanguage: "json"
+}
+```
+
+<Code />
+
+### Toggle
+
+```ts
+{
+    name: "toggle",
+    label: "Toggle",
+    type: "Toggle",
+}
+```
+
+<Toggle />
+
+### Date
+
+```ts
+{
+    name: "date",
+    label: "Date",
+    type: "Date",
+}
+```
+
+<Date />
+
+### Time
+
+```ts
+{
+    name: "time",
+    label: "Time",
+    type: "Time",
+}
+```
+
+<Time />
+
+### DateTime
+
+```ts
+{
+    name: "datetime",
+    label: "DateTime",
+    type: "DateTime",
+}
+```
+
+<DateTime />
+
+### Number
+
+```ts
+{
+    name: "number",
+    label: "Number",
+    type: "Number",
+}
+```
+
+<Number />
+
+### String
+
+```ts
+{
+    name: "text",
+    label: "String",
+    type: "String",
+}
+```
+
+<String />
+
+### HiddenString
+
+```ts
+{
+    name: "password",
+    label: "Hidden String",
+    type: "HiddenString",
+}
+```
+
+<HiddenString />
+
+### CheckPicker
+
+```ts
+{
+    name: "check-picker",
+    label: "Check Picker",
+    type: "CheckPicker",
+    pickerOptions: ["hello", "world", "yes", "No"],
+}
+```
+
+<CheckPicker />
+
+### SelectPicker
+
+```ts
+{
+    name: "select-picker",
+    label: "Select Picker",
+    type: "SelectPicker",
+    pickerOptions: ["hello", "world", "yes", "No"],
+}
+```
+
+:::note
+The `pickerOptions` parameter must present for the `SelectPicker` type else will be considered as an empty array.
+:::
+
+<SelectPicker />
+
+### Checkbox
+
+```ts
+{
+    name: "checkbox",
+    label: "Checkbox",
+    type: "Checkbox",
+}
+```
+
+<Checkbox />
+
+### Radio
+
+```ts
+{
+    name: "radio",
+    label: "Radio",
+    type: "Radio",
+    radioValues: ["hello", "world", "yes", "No"],
+}
+```
+
+:::note
+The `radioValues` parameter must present for the `Radio` type else will be considered as an empty array.
+:::
+
+<Radio />
+
+### Range
+
+```ts
+{
+    name: "range",
+    label: "Range",
+    type: "Range",
+}
+```
+
+<Range />
+
+### ListBox
+
+```ts
+{
+    name: "listbox",
+    label: "ListBox",
+    type: "ListBox",
+}
+```
+
+<ListBox />
+
+## TypeScript Properties
+
+### `ModuleSpecsInputsTypes`
+
+```ts
+type ModuleSpecsInputsTypes =
+  | "Route" // Default value for Request Node Types
+  | "DB_Selector" // Default value for DB Selectors
+  | "Methods" // Request Node API Methods
+  | "Code" // Code Editor Input Type
+  | "Toggle" // Toggle Input Type
+  | "Date" // Date Input Type
+  | "Time" // Time Input Type
+  | "DateTime" // Date Time Input Type
+  | "Number" // Number Input Type
+  | "String" // Text Input Type (DEFAULT VALUE)
+  | "HiddenString" // Password Input Type
+  | "CheckPicker" // List Picker Input Type
+  | "SelectPicker" // Select Picker Input Type
+  | "Checkbox" // Checkbox Input Type
+  | "Radio" // Radio Input Type
+  | "Range" // Range or Slider Input Type
+  | "ListBox"; // List Box Input Type
+```
+
+### `API_METHODS`
+
+```ts
+/**
+ * Defines a type for API methods that can be used in HTTP requests.
+ * Possible values are "GET", "POST", "PUT", "DELETE", and "PATCH".
+ */
+type API_METHODS = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
+```
+
+### `ModuleSpecsInputsTypeOptions`
+
+```ts
+interface ModuleSpecsInputsTypeOptions {
+  /**
+   * The label of the Select picker type.
+   */
+  label: string;
+
+  /**
+   * The value of the input type.
+   */
+  value: string;
+}
+```
