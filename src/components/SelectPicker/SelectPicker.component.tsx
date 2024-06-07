@@ -29,6 +29,7 @@ export default function SelectPicker() {
             value: val,
             label: val,
           }))}
+          style={{ width: 300 }}
           menuClassName={
             colorMode === "dark" ? "rs-theme-dark" : "rs-theme-light"
           }

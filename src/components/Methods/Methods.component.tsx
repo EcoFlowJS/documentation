@@ -30,6 +30,10 @@ export default function Methods() {
             value: val,
             label: val,
           }))}
+          style={{ width: 300 }}
+          menuClassName={
+            colorMode === "dark" ? "rs-theme-dark" : "rs-theme-light"
+          }
         />
       </FlexboxGrid.Item>
     </FlexboxGrid>
