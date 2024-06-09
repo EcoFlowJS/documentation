@@ -49,11 +49,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/ecoflow-social-card.png",
     navbar: {
       title: "EcoFlowJS",
       logo: {
-        alt: "My Site Logo",
+        alt: "EcoFLowJS",
         src: "img/logo.svg",
       },
       items: [
