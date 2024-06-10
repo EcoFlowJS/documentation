@@ -31,10 +31,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout description="Build your RestFul-APIs with the minimal code possible!">
       <HomepageHeader />
     </Layout>
   );
