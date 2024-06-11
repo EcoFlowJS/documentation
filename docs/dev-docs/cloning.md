@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 4
 ---
 
-# Developer Guide
+# Clone Project
 
 To run the latest code from the repository, follow these steps:
 

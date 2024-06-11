@@ -29,41 +29,87 @@ const config: Config = {
     locales: ["en"],
   },
 
-  plugins: ["docusaurus-plugin-less"],
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        // language: ["en", "zh"],
+        // ```
+      },
+    ],
+  ],
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
+      /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
+          routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
-          exclude: ["./docs/references/*"],
         },
         blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
-      } satisfies Preset.Options,
+      },
+    ],
+  ],
+
+  plugins: [
+    "docusaurus-plugin-less",
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            to: "/dev-docs/get-started",
+            from: ["/dev-docs"],
+          },
+        ],
+      },
     ],
   ],
 
   themeConfig: {
     // Replace with your project's social card
     image: "img/ecoflow-social-card.png",
+    colorMode: {
+      defaultMode: "dark",
+      respectPrefersColorScheme: true,
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
     navbar: {
       title: "EcoFlowJS",
       logo: {
         alt: "EcoFLowJS",
-        src: "img/logo.svg",
+        src: "img/logo-dark.svg",
+        srcDark: "img/logo-light.svg",
       },
       items: [
         {
           type: "docSidebar",
-          sidebarId: "EcoFlowJSDocs",
+          sidebarId: "EcoFlowJSDevDocs", // Pointing to the first sidebar
           position: "left",
-          label: "Documentation",
+          label: "Developer Docs",
         },
-        { to: "/docs/api-docs", label: "API Reference", position: "left" },
+        {
+          type: "docSidebar",
+          sidebarId: "EcoFlowJSUserDocs", // Pointing to the first sidebar
+          position: "left",
+          label: "User Guide",
+        },
         {
           href: "https://github.com/EcoFlowJS/eco-flow",
           label: "GitHub",

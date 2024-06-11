@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Quick Start
+# 🚀 Get Started
 
 This guide will help you get EcoFlowJS installed and running in just a few minutes.
 
