@@ -37,6 +37,7 @@ const config: Config = {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
+        docsRouteBasePath: "/",
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
         // language: ["en", "zh"],
@@ -69,12 +70,19 @@ const config: Config = {
       {
         redirects: [
           {
-            to: "/dev-docs/get-started",
+            to: "/dev-docs/getting-started",
             from: ["/dev-docs"],
           },
         ],
       },
     ],
+  ],
+
+  scripts: [
+    {
+      src: "https://kit.fontawesome.com/144edabc24.js",
+      crossorigin: "anonymous",
+    },
   ],
 
   themeConfig: {

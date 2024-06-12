@@ -20,6 +20,7 @@
   --doc-footer-background-color: #272c36;
   --ifm-link-color: #80607a;
   --ifm-link-hover-color: #547aa5;
+  --search-local-highlight-color: #adadad;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -37,8 +38,26 @@
   --doc-footer-background-color: #333a47;
   --ifm-link-color: #91a6ff;
   --ifm-link-hover-color: #adbcff;
+  --search-local-highlight-color: #62626a;
+  --search-local-hit-background: #27272a;
 }
 
 .footer--dark {
   --ifm-footer-background-color: var(--doc-footer-background-color);
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary-darker);
+}
+
+.table-of-contents__link:hover {
+  color: var(--ifm-color-primary-darker);
+}
+
+.navbar__logo img {
+  border-radius: 5px;
+}
+
+.sidebar-item-icon {
+  margin-right: 8px;
 }

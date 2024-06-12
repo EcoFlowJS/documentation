@@ -38,7 +38,7 @@ function Homepage() {
       <Stack.Item>
         <Stack spacing={30}>
           <Stack.Item>
-            <Link to="/dev-docs/get-started">
+            <Link to="/dev-docs/getting-started">
               <Button
                 appearance="primary"
                 color="cyan"
