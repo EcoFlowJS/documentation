@@ -57,7 +57,7 @@ const config: Config = {
         },
         blog: false,
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: "./src/less/__index.less",
         },
       },
     ],
@@ -72,6 +72,14 @@ const config: Config = {
           {
             to: "/dev-docs/getting-started",
             from: ["/dev-docs"],
+          },
+          {
+            to: "/user-docs/getting-started/welcome",
+            from: ["/user-docs"],
+          },
+          {
+            to: "/user-docs/getting-started/welcome",
+            from: ["/user-docs/getting-started"],
           },
         ],
       },
