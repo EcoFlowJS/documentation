@@ -8,7 +8,14 @@ This guide will help you get EcoFlowJS installed and running in just a few minut
 
 ### Prerequisites
 
-Ensure you have a [supported version of Node.js](https://nodejs.org/en/download) installed.
+<Admonition type="info" icon="✅" title="Prerequisites">
+    Before installing Strapi, the following requirements must be installed on your computer:
+
+    - [Node.js](https://nodejs.org/en): Only [Active LTS or Maintenance LTS versions](https://nodejs.org/en/about/previous-releases) are supported (currently v18 and v20). Odd-number releases of Node, known as "current" versions of Node.js, are not supported (e.g. v19, v21).
+    - npm (v6 and above)
+    - Python (3.6.0 and above)
+
+</Admonition>
 
 ### Installation
 

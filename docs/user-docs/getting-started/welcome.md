@@ -8,7 +8,7 @@ If you are running the application in the authenticated mode, you have logged in
 alt="Dashboard"
 sources={{
     light: '/img/assets/main-dashboard.png',
-    dark: '/img/assets/main-dashboard.png',
+    dark: '/img/assets/main-dashboard-dark.png',
   }}
 />
 
