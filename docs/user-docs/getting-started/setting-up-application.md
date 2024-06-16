@@ -77,9 +77,62 @@ _Fill up the default admin user details and click next to proceed to the further
 <ThemedImage
 alt="setup welcome screen"
 sources={{
-    light: '/img/assets/setup-user-creation.png',
-    dark: '/img/assets/setup-user-creation-dark.png',
+    light: '/img/assets/setup-import.png',
+    dark: '/img/assets/setup-import-dark.png',
   }}
 />
 
-_Fill up the default admin user details and click next to proceed to the further steps._
+_Select the exported zip file and click next for the final confirmation._
+
+### Database Configuration
+
+This database configuration is just for the application itself. By default the database is SQLite but can be changed by toggling the button
+
+<ThemedImage
+alt="setup welcome screen"
+sources={{
+    light: '/img/assets/setup-DB-Selector.png',
+    dark: '/img/assets/setup-DB-Selector-dark.png',
+  }}
+/>
+
+#### _Supported Database Drivers:_
+
+| Database   | Minimum | Recommended |
+| ---------- | ------- | ----------- |
+| MongoDB    | 5.0.27  | 7.0.11      |
+| MySQL      | 5.7.8   | 8.0         |
+| PostgreSQL | 11.0    | 14.0        |
+| SQLite     | 3       | 3           |
+
+<ThemedImage
+alt="setup welcome screen"
+sources={{
+    light: '/img/assets/setup-DB-options.png',
+    dark: '/img/assets/setup-DB-options-dark.png',
+  }}
+/>
+
+_Select your preferred database driver base and configurations accordingly._
+
+Once configured click next for the final overview of your configuration and finish the setup process.
+
+### Finalize
+
+Finalize your configuration by checking the configuration details and confirming it by clicking the finish button.
+
+<ThemedImage
+alt="setup welcome screen"
+sources={{
+    light: '/img/assets/setup-finish.png',
+    dark: '/img/assets/setup-finish-dark.png',
+  }}
+/>
+
+<br/><br/>
+
+:::note
+Once clicked the finish button wait for the application to configure with the provided details and for install the default packages.
+
+Once the server is fully configured it will `restart` and redirect to the `sign in` page.
+:::
