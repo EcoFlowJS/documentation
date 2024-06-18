@@ -35,6 +35,7 @@ const devDocsSidebar: SidebarConfig = [
   },
   {
     type: "category",
+    collapsed: false,
     label: "API Reference",
     description: "API Reference",
     customProps: {
@@ -53,6 +54,7 @@ const devDocsSidebar: SidebarConfig = [
   },
   {
     type: "category",
+    collapsed: false,
     label: "Creating Nodes",
     customProps: {
       icon: "gravity-ui:nodes-left",
@@ -71,6 +73,7 @@ const devDocsSidebar: SidebarConfig = [
   },
   {
     type: "category",
+    collapsed: false,
     label: "Contributing",
     customProps: {
       icon: "mynaui:user-octagon",
