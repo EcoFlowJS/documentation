@@ -9,3 +9,19 @@ sources={{
     dark: '/img/assets/admin-dashboard-dark.png',
   }}
 />
+
+## Status
+
+Displays the status of the total **available packages**, **installed package** and the **count** of database connections.
+
+## Calendar
+
+Shows the current date on the dashboard and able to view the calendar for previous and future dates.
+
+## Environments variables
+
+Displays the list of available user defined **environments variables names**.
+
+## API Routes Details
+
+Displays the list of available API routes with information like **Methods**, **paths** and **parameters**.

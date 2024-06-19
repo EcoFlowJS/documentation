@@ -71,12 +71,12 @@ const userDocsSidebar: SidebarConfig = [
       {
         type: "doc",
         id: "user-docs/admin-panel/backup-restore",
-        label: "Backup Restore",
+        label: "Backup and Restore",
       },
       {
         type: "doc",
         id: "user-docs/admin-panel/export-import",
-        label: "Export Import",
+        label: "Export Import Project",
       },
     ],
   },
