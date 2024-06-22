@@ -32,6 +32,10 @@ To access the system environments panel:
 1. Access the server environment panel. For more information about how to access the server environment panel see [here](#accessing-the-server-environment-panel).
 2. Click on **System Environments** on the left side panel of the system environments panel.
 
+:::note
+If you cannot click on the **Users** button implies that you don't have permission for accessing user and contact your project administrator for more information about the permissions.
+:::
+
 :::tip[NOTES]
 
 - System Environments value can only be edited only.

@@ -24,6 +24,10 @@ To access the role and permissions:
 1. Click on **Advanced** on the left side panel of the main navigation of your EcoFLowJS application.
 2. Click on **Roles** from the sub section.
 
+:::note
+If you cannot click on the **Users** button implies that you don't have permission for accessing user and contact your project administrator for more information about the permissions.
+:::
+
 ### Creating a role
 
 <ThemedImage

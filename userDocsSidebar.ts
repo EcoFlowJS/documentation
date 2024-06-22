@@ -80,6 +80,60 @@ const userDocsSidebar: SidebarConfig = [
       },
     ],
   },
+  {
+    type: "category",
+    label: "Schema Editor",
+    collapsed: false,
+    items: [
+      {
+        type: "doc",
+        id: "user-docs/schema-editor/accessing-schema-editor",
+        label: "Accessing schema editor",
+      },
+      {
+        type: "doc",
+        id: "user-docs/schema-editor/dashboard",
+        label: "Dashboard",
+      },
+      {
+        type: "doc",
+        id: "user-docs/schema-editor/db-connections",
+        label: "Database connections",
+      },
+      {
+        type: "doc",
+        id: "user-docs/schema-editor/table-creations",
+        label: "Table creations",
+      },
+    ],
+  },
+  {
+    type: "category",
+    label: "Flow Editor",
+    collapsed: false,
+    items: [
+      {
+        type: "doc",
+        id: "user-docs/flow-editor/accessing-flow-editor",
+        label: "Accessing flow editor",
+      },
+      {
+        type: "doc",
+        id: "user-docs/flow-editor/editor-settings",
+        label: "Editor settings",
+      },
+      {
+        type: "doc",
+        id: "user-docs/flow-editor/nodes-and-configurations",
+        label: "Nodes and Configurations",
+      },
+      {
+        type: "doc",
+        id: "user-docs/flow-editor/flow-and-deploy",
+        label: "Flow and Deployment",
+      },
+    ],
+  },
 ];
 
 export default userDocsSidebar;

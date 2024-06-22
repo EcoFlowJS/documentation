@@ -72,6 +72,13 @@ sources={{
 
 _Fill up the default admin user details and click next to proceed to the further steps._
 
+| Fields   | Description                       |
+| -------- | --------------------------------- |
+| Name     | Name of the user.                 |
+| Username | Username for the user.            |
+| Password | Password for the user             |
+| Email    | **Optional:** Email for the user. |
+
 #### Import selections
 
 <ThemedImage

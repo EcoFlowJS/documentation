@@ -82,4 +82,6 @@ To change the password of your account:
 4. Click on the **Change Password** button.
 
 <hr/>
+<Admonition type="success" icon="" title=""> 
 Congratulations on being a new EcoFlowJS user! You're now ready to discover all the features and options that EcoFLowJS has to offer!
+</Admonition>
