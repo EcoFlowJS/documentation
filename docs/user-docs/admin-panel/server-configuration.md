@@ -265,7 +265,7 @@ Any changes to the server system database configuration allows you migrate your 
   :::
 
 :::tip
-If the application gets crashes due to invalid configuration, can be easily be resolved by restoring the configuration which get automatically backed up during the commitment of the configurations.
+In case the application gets crashes due to invalid configuration, can be easily be resolved by restoring the configuration which get automatically backed up during the commitment of the configurations.
 
 To do so, just remove the current configuration present at `%HOME DIR%/.ecoflow/config` named `ecoflow.json` and rename latest backed up at `same directory` to `ecoflow.json`.
 
