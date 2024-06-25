@@ -103,7 +103,12 @@ const userDocsSidebar: SidebarConfig = [
       {
         type: "doc",
         id: "user-docs/schema-editor/table-creations",
-        label: "Table creations",
+        label: "Database Table Structure",
+      },
+      {
+        type: "doc",
+        id: "user-docs/schema-editor/db-records",
+        label: "Database Records",
       },
     ],
   },
