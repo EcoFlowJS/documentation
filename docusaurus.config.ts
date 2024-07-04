@@ -54,6 +54,7 @@ const config: Config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
+          editUrl: "https://github.com/EcoFlowJS/documentation/tree/main/",
         },
         blog: false,
         theme: {
