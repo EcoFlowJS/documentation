@@ -16,14 +16,17 @@ This guide will help you get EcoFlowJS installed and running in just a few minut
     - Python (3.6.0 and above)
 
     **On Unix**
-    
+
     - `make`
     - A proper C/C++ compiler toolchain, like [GCC](https://gcc.gnu.org/)
 
     **On macOS**
 
     - `Xcode Command Line Tools` which will install `clang`, `clang++`, and `make`.
-        - Install the `Xcode Command Line Tools` standalone by running `xcode-select --install`. -- OR --
+        - Install the `Xcode Command Line Tools` standalone by running `xcode-select --install`. 
+        
+            **-- OR --**
+
         - Alternatively, if you already have the [full Xcode installed](https://developer.apple.com/xcode/download/), you can install the Command Line Tools under the menu `Xcode -> Open Developer Tool -> More Developer Tools...`.
 
     **On Windows**
